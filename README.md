@@ -63,9 +63,22 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 
 | Azure Resource | Service Tier | Monthly Cost |
 | ------------ | ------------ | ------------ |
-| *Azure Postgres Database* |     |              |
-| *Azure Service Bus*   |         |              |
-| ...                   |         |              |
+| *Azure Postgres Database* | Bustable Standard_B1ms 32 GiB | USD 18.18/month |
+| *Azure Service Bus* | Basic | USD 0.05/1M OPS/month |
+| *Azure Web App* | F1 | Free |
+| *Azure Function* | Y1 - Consumption | Free up to 400,000/GB-s execution time/month; Free up to 1 million executions/month |
 
 ## Architecture Explanation
-This is a placeholder section where you can provide an explanation and reasoning for your architecture selection for both the Azure Web App and Azure Function.
+Choosing Azure Web App and Azure Functions for migrating non-cloud workloads can be a strategic move for several reasons:
+
+1. Scalability: Azure Web App and Azure Functions provide built-in scaling options that can automatically handle increased workloads without requiring manual intervention.
+
+2. Cost-Effectiveness: With Azure Functions, you pay only for the compute resources you consume, making it a cost-effective option for workloads that don't require continuous resource usage.
+
+3. Managed Services: Azure Web App offers a fully managed platform, reducing the overhead of infrastructure management and allowing you to focus on application development.
+
+4. Integration: Both Azure Web App and Azure Functions seamlessly integrate with other Azure services, enabling you to build comprehensive and cohesive solutions.
+
+5. Flexibility: Azure Functions support a wide range of programming languages and trigger types, making it easier to adapt to different scenarios and existing workflows.
+
+6. By leveraging these services, you can modernize your applications, improve efficiency, and take advantage of the cloud's flexibility and scalability.
