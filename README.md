@@ -69,16 +69,16 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 | *Azure Function* | Y1 - Consumption | Free up to 400,000/GB-s execution time/month; Free up to 1 million executions/month |
 
 ## Architecture Explanation
-Choosing Azure Web App and Azure Functions for migrating non-cloud workloads can be a strategic move for several reasons:
+For this Tech Conf 2022 cloud-migration project, we strategically migrated a non-cloud native website by leveraging Azure's powerful suite of services, including Azure Web App, Azure Functions, Azure Postgres Database, and Azure Service Bus. This approach offered us numerous benefits:
 
-1. Scalability: Azure Web App and Azure Functions provide built-in scaling options that can automatically handle increased workloads without requiring manual intervention.
+**Scalability:** Azure Web App and Azure Functions provide robust scalability options, enabling our Tech Conf website to handle varying traffic levels effortlessly.
 
-2. Cost-Effectiveness: With Azure Functions, you pay only for the compute resources you consume, making it a cost-effective option for workloads that don't require continuous resource usage.
+**Cost-Effectiveness:** Utilizing Azure Functions allowed us to adopt a pay-as-you-go model, ensuring cost-efficiency for background processes like notifications via Azure Service Bus and the SendGrid API.
 
-3. Managed Services: Azure Web App offers a fully managed platform, reducing the overhead of infrastructure management and allowing you to focus on application development.
+**Managed Services:** Azure Web App offered a fully managed platform, significantly reducing the need for infrastructure management and letting us concentrate on enhancing the website’s functionality and user experience.
 
-4. Integration: Both Azure Web App and Azure Functions seamlessly integrate with other Azure services, enabling you to build comprehensive and cohesive solutions.
+**Integration:** Seamless integration between Azure Postgres Database, Azure Service Bus, and Azure Functions facilitated efficient handling of database connections for registrations, conferences, and announcements, alongside streamlined background processes.
 
-5. Flexibility: Azure Functions support a wide range of programming languages and trigger types, making it easier to adapt to different scenarios and existing workflows.
+**Flexibility:** Azure Functions' support for various programming languages and triggers ensured we could easily adapt to different scenarios and workflows, modernizing our application and improving efficiency.
 
-6. By leveraging these services, you can modernize your applications, improve efficiency, and take advantage of the cloud's flexibility and scalability.
+By harnessing these Azure services, we successfully modernized the Tech Conf website, achieving greater efficiency and taking full advantage of the cloud's flexibility and scalability.
